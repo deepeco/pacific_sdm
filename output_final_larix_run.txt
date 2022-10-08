@@ -1,0 +1,78 @@
+The file larix_final.csv succesfully loaded.
+File overview:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10086 entries, 0 to 10085
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   species    10086 non-null  object 
+ 1   latitude   10086 non-null  float64
+ 2   longitude  10086 non-null  float64
+dtypes: float64(2), object(1)
+memory usage: 236.5+ KB
+==================================================
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10086 entries, 0 to 10085
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   species    10086 non-null  object 
+ 1   latitude   10086 non-null  float64
+ 2   longitude  10086 non-null  float64
+dtypes: float64(2), object(1)
+memory usage: 236.5+ KB
+Unique species:  ['larix']
+Index  = 0, grid={'ps_density': 0, 'distance': 2}
+Processing: sp = larix
+Constructing the dataset...
+Species selected...
+Filling presence and absence data.
+Data for species larix loaded from a file.
+Absence inds selected...
+Presence data formed.
+Absence data formed.
+Presence and absence data were merged. shape=(20086, 4)
+Dataframe counstructed, shape=(17790, 9)
+Summary df:             latitude     longitude  ...         PWKI0         PCKI0
+count  17790.000000  17790.000000  ...  17790.000000  17790.000000
+mean      57.847917    122.649821  ...    309.246037    114.193198
+std        9.646675     18.363136  ...    223.017350     72.196330
+min       30.001984     90.011905  ...      0.000000      0.000000
+25%       51.962515    109.008433  ...    178.000000     70.000000
+50%       60.024802    121.083333  ...    243.000000    111.000000
+75%       64.903770    133.745399  ...    376.000000    146.000000
+max       78.347222    174.968254  ...   3229.000000   1387.000000
+
+[8 rows x 7 columns]
+Removed correlated features:  set()
+Leaved features:  {'CKI5', 'WKI5', 'IC', 'PWKI0', 'PCKI0'}
+Dataset is formed.
+The number of absence ponts:  7823
+The number of presence ponts:  9967
+Using classifier:  RF_100
+AUC: [0.75193291 0.89832092 0.9242741  0.94112837 0.93730488 0.93499809
+ 0.93192301 0.93120502 0.91873625 0.93397857]
+Estimation MaxSSS: (1.7267887095556498, 0.48484848484848486).
+SVD: [148355.5876377   49037.50914257  17789.17179331   8172.11543145
+   5367.52371188]
+Estimation MaxSSS: (1.6986118359937894, 0.595959595959596).
+SVD: [147966.86237968  49539.96639391  17848.71223474   8384.19062665
+   5524.99471045]
+Estimation MaxSSS: (1.7157871942132985, 0.494949494949495).
+SVD: [148534.3176615   48589.17759239  17469.56367026   8195.07728119
+   5445.79610848]
+Estimation MaxSSS: (1.7016964548858509, 0.4747474747474748).
+SVD: [148359.14229681  49475.64392687  17656.96340993   8180.96374299
+   5496.04288136]
+Features: ['CKI5', 'WKI5', 'IC', 'PWKI0', 'PCKI0']
+Feature importances: [0.18329941 0.24846366 0.22476677 0.16540376 0.1780664 ] [0.00741704 0.00567661 0.00219988 0.00182245 0.00255806] larix
+Confusion matrices: [0.80416922 0.90338235] [0.01583807 0.00738765]
+Optimal threshold value is 0.494949494949495; sens + spec = 1.999799337814789
+CURRENT MODEL: _70cc26
+CURRENT MODEL: _70cc85
+CURRENT MODEL: _70mr26
+CURRENT MODEL: _70mr85
+CURRENT MODEL: _cclgm
+CURRENT MODEL: _mrlgm
+CURRENT MODEL: _ccmid
+CURRENT MODEL: _mrmid
